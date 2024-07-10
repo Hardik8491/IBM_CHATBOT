@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Homepage</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "911faf6c-c95e-4caf-a683-afb2f8daebc9", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "e2c734e6-203f-4505-8ec7-fa474a2f7df8", // The ID of your service instance.
+      onLoad: async (instance) => {
+        await instance.render();
+      },
+    };
+    setTimeout(function () {
+      const t = document.createElement("script");
+      t.src =
+        "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+        (window.watsonAssistantChatOptions.clientVersion || "latest") +
+        "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+
+  <body>
+    <div class="flex min-h-screen flex-col">
+      <header class="header">
+        <div class="flex items-center justify-between px-4 md:px-6">
+          <div class="flex padding">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="logo"
+              >
+                <rect width="20" height="12" x="2" y="6" rx="2"></rect>
+                <circle cx="12" cy="12" r="2"></circle>
+                <path d="M6 12h.01M18 12h.01"></path>
+              </svg>
+            </a>
+          </div>
+          <nav class="nav">
+            <a href="#">Personal</a>
+            <a href="#">Business</a>
+            <a href="#">Wealth</a>
+            <a href="#">About</a>
+          </nav>
+          <button class="btn-open-account">Open Account</button>
+        </div>
+      </header>
+
+      <main class="flex-1">
+        <section class="hero-section">
+          <div class="py6 text-center">
+            <h1>Welcome to You Bank Of America</h1>
+            <p>
+              Experience the future of banking with our innovative features and
+              personalized services.
+            </p>
+            <button class="btn-open-account animate-bounce">
+              Open an Account
+            </button>
+          </div>
+        </section>
+        <section class=" pt-32 justify-center py-4 features-section flex items-center w-full h-full">
+          <div class="grid gap-12 px-4 md:px-6 lg:grid-cols-2">
+            <div class="space-y-4 px-10">
+              <div class="feature-tag ">Key Features</div>
+              <h2 class="text-5xl font-bold max-w-md">
+                Streamline Your Banking Experience
+              </h2>
+              <p class="text-muted-foreground max-w-md md:text-xl">
+                Discover our cutting-edge features designed to simplify your
+                financial life.
+              </p>
+            </div>
+            <div class="grid gap-6">
+              <div class="feature">
+                <h3>Mobile App</h3>
+                <p>
+                  Manage your finances on-the-go with our intuitive mobile app.
+                </p>
+              </div>
+              <div class="feature">
+                <h3>Secure Transactions</h3>
+                <p>
+                  Rest assured with our advanced security measures to protect
+                  your money.
+                </p>
+              </div>
+              <div class="feature">
+                <h3>Personalized Insights</h3>
+                <p>
+                  Receive tailored insights based on your financial activities.
+                </p>
+              </div>
+              <div class="feature">
+                <h3>24/7 Support</h3>
+                <p>
+                  Our dedicated support team is available around the clock toṅ
+                  assist you.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="testimonials-section">
+          <div class="grid gap-12 px-4 md:px-6 lg:grid-cols-2">
+            <div class="space-y-4">
+              <div class="testimonial-tag">Testimonials</div>
+              <h2 class="text-5xl font-boldk">What Our Customers Say</h2>
+              <p class="text-muted-foreground md:text-xl">
+                Hear from our satisfied customers.
+              </p>
+            </div>
+            <div class="grid gap-6">
+              <div class="testimonial">
+                <div class="flex items-start gap-4">
+                  <span class="avatar">JD</span>
+                  <div>
+                    <h4>John Doe</h4>
+                    <p>"The most reliable bank I've ever used!"</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial">
+                <div class="flex items-start gap-4">
+                  <span class="avatar">JS</span>
+                  <div>
+                    <h4>Jane Smith</h4>
+                    <p>"Customer service is top-notch."</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial">
+                <div class="flex items-start gap-4">
+                  <span class="avatar">MJ</span>
+                  <div>
+                    <h4>Michael Johnson</h4>
+                    <p>
+                      "Highly recommend for their secure and efficient
+                      services."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div
+          class="container flex flex-col items-center justify-between gap-4 px-4 md:flex-row md:px-6"
+        >
+          <p class="text-sm">© 2023 Bank</p>
+          <nav class="footer-nav">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
